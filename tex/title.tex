@@ -1,0 +1,21 @@
+\makeatletter
+  \def\@maketitle{%
+  \newpage\null
+  \vskip 2em%
+  \begin{center}%
+  \let\footnote\thanks
+    {\Large \@title \par}%
+    \vskip 1.5em%
+  \end{center}% 追加
+  \begin{flushright}
+        \@author
+  \end{flushright}
+  \begin{flushright}% 追加
+    {\large \@date}%
+  \end{flushright}%
+  \par\vskip 1.5em}
+\makeatother
+
+\title{題名}
+\author{九州工業大学 機械知能工学科　機械コース\\3年 学籍番号:13104069 坂本 悠作}
+\date{\today}
