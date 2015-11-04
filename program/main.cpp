@@ -147,13 +147,14 @@ int main(void){
 	printf("%f\n",alpha[i]);
   }
 
+  ofstream ofs("../data/out.dat");
   int r;
   for(r=-20;r<20;r++){
 	double t=0;
 	for(j=0;j<dimention;j++){
 	  t += alpha[j] * exp( -1 * pow((r*0.1-x[j]),2) );
 	}
-	cout << "x=" << r*0.1 << " , y=" << t << endl;
+	ofs << r*0.1 << "\t" <<  t << endl;
   }
   
   return 0;
